@@ -1,0 +1,46 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Estrutura principal */
+main{
+    margin: 0 auto;
+    padding: 1.25rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-section);
+    width: min(1200px, calc(100% - 1rem));
+    margin: 0 auto;
+}
+
+body{
+    background-image: url('../Asteroid-artist-ruins-pokemon-2184331-wallhere.com.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter:blur(5px)  ;
+    scroll-behavior: smooth;
+    overscroll-behavior: none; /* bloqueia o scrool além do conteúdo */
+    scrollbar-width: none; /* esconde a barra (FireFox) */
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-main);
+    background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.75) 0, transparent 28%),
+        linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+/* esconde a barra (Chrome, Safari e Edge) */
+::-webkit-scrollbar {
+  display: none;
+}   
